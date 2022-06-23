@@ -307,6 +307,7 @@ color: var(--complementary-color);
     border-radius: 50%;
     background-color: var(--main-background-color);
     border: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
 }
 .icon-close { 
     display: inline-block;
@@ -340,7 +341,6 @@ width: 448px;
     position: relative;
     text-align: start;
 display: block;
-
 }
 .text-form,
 .text-textarea {
@@ -349,7 +349,8 @@ display: block;
     font-size: 12px;
     line-height: 1.16;
     letter-spacing: 0.01em;
-     color: rgba(117, 117, 117, 0.5);
+    color: var(--main-color-text);
+
 }
 .form-input { 
 display: block;
@@ -403,6 +404,7 @@ border: 1px solid rgba(33, 33, 33, 0.2);
     justify-content: center;
 }
 .checkbox {
+    position: absolute;
 width: 1px;
 height: 1px;
 margin: -1px;
@@ -416,10 +418,13 @@ overflow: hidden;
     width: 16px;
     height: 15px;
     border: 1px solid #000;
-    transition: background-color 250ms var(--cubic-bezier);
+    border-radius: 4px;
+    transition: background-color 250ms var(--cubic-bezier),
+    border-color 250ms var(--cubic-bezier);
 }
 .checkbox:checked + .icon-check {
     background-color: var(--complementary-color);
+    border-color: var(--complementary-color);
 }
 .text-checkbox {
 margin-left: 8.38px;
@@ -444,6 +449,7 @@ margin-left: 8.38px;
      border: 1px solid transparent;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
         border-radius: 4px;
+        cursor: pointer;
 }
 /* benefits преимущества */
 .benefits {
@@ -907,6 +913,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     background-color: #2F303A;
+    color: #ffffff;
 }
 .button-footer {
     display: flex;
@@ -927,6 +934,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
             border: 1px solid transparent;
             border-radius: 4px;
         color: #FFFFFF;
+        cursor: pointer;
 }
 .icon-button {
     margin-left: 10px;
